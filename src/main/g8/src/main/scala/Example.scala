@@ -3,20 +3,14 @@ package com.example
 import unfiltered.request._
 import unfiltered.response._
 
-import org.clapper.avsl.Logger
-
 /** unfiltered plan */
 class App extends unfiltered.filter.Plan {
   import QParams._
 
-  val logger = Logger(classOf[App])
-
   def intent = {
     case GET(Path("/")) =>
-      logger.debug("GET /")
       Ok ~> view(Map.empty)(<p> What say you? </p>)
     case POST(Path("/") & Params(params)) =>
-      logger.debug("POST /")
       val vw = view(params)_
       val expected = for {
         int <- lookup("int") is
