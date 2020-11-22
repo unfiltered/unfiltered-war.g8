@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/unfiltered/unfiltered-war.g8.svg?branch=master)](https://travis-ci.com/unfiltered/unfiltered-war.g8)
-
 A [giter8][g8] template for [Unfiltered][unfiltered] applications targeting [sbt][sbt] 0.13 and up.
 
 Use the `jetty:start` task in sbt to start a server and `jetty:stop` to shut it down.
