@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - scala: 2.12.18
+          - scala: 2.13.12
           - scala: 2.13.11
     steps:
     - uses: actions/setup-java@cd89f46ac9d01407894225f350157564c9c7cee2 # v3.12.0
