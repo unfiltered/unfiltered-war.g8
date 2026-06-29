@@ -13,7 +13,7 @@ jobs:
       matrix:
         include:
           - scala: 2.12.21
-          - scala: 2.13.16
+          - scala: 2.13.18
     steps:
     - uses: actions/setup-java@1bcf9fb12cf4aa7d266a90ae39939e61372fe520 # v5.4.0
       with:
